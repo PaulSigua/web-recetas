@@ -17,11 +17,7 @@ body{
     width: 100%;
     height: 70vh;
     min-width: 600px;
-<<<<<<< HEAD
-    max-height: 400px;
-=======
     max-height: 300px;
->>>>>>> 8268e5df4cf80c4135b4f600406c47e7c2a7786d
     position: relative;
     display: grid;
     grid-template-rows: 100px 1fr;
@@ -37,10 +33,6 @@ body{
     height: 100%;
     background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('Imagenes/portada.jpg');
     background-size: cover;
-<<<<<<< HEAD
-    clip-path: polygon(20 0, 100% 0, 100% 48%, 0 48%);
-=======
->>>>>>> 8268e5df4cf80c4135b4f600406c47e7c2a7786d
     z-index: -1;
 }
 
@@ -243,7 +235,33 @@ body{
 /* Segunda parte: Recetas*/
 /*///////////////////////*/
 
-<<<<<<< HEAD
+.social-icons {
+    font-size: 24px; /* Tamaño de los íconos */
+}
+
+.social-icons i {
+    margin-right: 10px; /* Espacio entre los íconos */
+    color: #2e0606; /* Color de los íconos */
+}
+
+.hero_re{
+    width: 100%;
+    height: 10vh;
+    position: relative;
+    color: rgb(255, 255, 255); 
+    
+}
+
+.hero_re::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('Imagenes/portada.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+
 .first-image{
     display: flex;
     padding: 25px;
@@ -286,22 +304,3 @@ body{
     margin-right: 10px; /* Espacio entre los íconos */
     color: #2e0606; /* Color de los íconos */
 }
-=======
-.hero_re{
-    width: 100%;
-    height: 10vh;
-    position: relative;
-    color: rgb(255, 255, 255); 
-    
-}
-
-.hero_re::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('Imagenes/portada.jpg');
-    background-size: cover;
-    z-index: -1;
-}
->>>>>>> 8268e5df4cf80c4135b4f600406c47e7c2a7786d
