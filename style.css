@@ -2,11 +2,12 @@
 
 body{
     font-family: 'Ubuntu', sans-serif;
+    background-color: rgba(255, 193, 164, 0.767);
 }
 
 .container{
-    width: 90%;
-    max-width: 1200px;
+    width: 95%;
+    
     margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-container);
@@ -14,9 +15,9 @@ body{
 
 .hero{
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     min-width: 600px;
-    max-height: 800px;
+    max-height: 300px;
     position: relative;
     display: grid;
     grid-template-rows: 100px 1fr;
@@ -27,55 +28,30 @@ body{
 .hero::before{
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('Imagenes/portada.jpg');
     background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 48%, 0 48%);
     z-index: -1;
 }
 
 .nav{
-    --pading-container:0;
     height: 100%;
     display: flex;
     align-items: center;
     /*background-color: white;*/
 }
 
-.nav__title{
-    font-weight: 300;
-}
-
-.nav__items{
-    list-style: none;
-}
-
 .nav__link{
     margin-left: auto;
-    padding: 0;
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: max-content;
-    gap: 2em;
+    padding: 10px;
+    display: flex;
     color: white;
     text-decoration: none;
 }
 
 .nav__items{
     list-style: none;
-}
-
-.nav__close{
-    display: var(--show, none);
-
-}
-
-.nav__img{
-    display: block;
-    width: 30px;
 }
 
 .hero_title{
@@ -90,55 +66,139 @@ body{
     text-align: justify;
     margin-bottom: 150px;
 }
-
-.part_inirecets{
-    color: black;
-    width: 90%;
-    max-width: 1200px;
+.slider-frame {
+    overflow: hidden;
+    position: relative;
+    width: 960px;
     margin: 0 auto;
-    overflow: hidden;
-    padding: var(--padding-container);
 }
-
-.slider-frame{
-    margin: 0;
-    padding: 0;
-    font-family: lato;
-    width: 450px;
+.grid-item img {
+    display: block;
+    width: 100%;
     height: auto;
-    margin: 50px auto 0;
-    overflow: hidden;
+
 }
 
+.grid-item p {
+    font-family: 'Raleway', sans-serif;
+    padding: 1em;
+    line-height: 1.4;
+    color: white;
+    text-shadow: 0 0 5px rgba(0,0,0,.7);
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    padding: 0;
+}
+
+.grid-item {
+    box-shadow: 0 2px 6px rgba(0,0,0,.3);
+    border-radius: 8px;
+    background-color: #361f1f;
+    
+    cursor: pointer;
+    backface-visibility: hidden;
+    position: relative;
+    transform-origin: left bottom;
+    padding: 7px;
+    margin: 50px;
+}
+.list-container {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+.list-container .form-container {
+   width: 100%;
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   background-image: url('../images/bg_pattern.png');
+   background-size: cover;
+   color: rgb(0, 0, 0);
+   
+
+}
+
+.list-container{
+    width: 90%;
+    box-shadow: 12px 12PX 12PX 12px rgba(0, 0, 0, 0.3);
+    margin: auto;
+    
+    max-width: 700px;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+
+}
+.list-container .titulos {
+    margin-bottom: 0px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.7em;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    
+
+}
+.list-container .subtitulos {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 1.2em;
+    
+}
+
+.list-container .centrado {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.list-container .label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 14px;
+}
+
+.btn{
+    cursor: pointer;
+    background-color: #361f1f;
+    border: 1px solid transparent;
+    color: white;
+    line-height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
 
 /*////////////////////////*/
 /* Segunda parte: Recetas*/
 /*///////////////////////*/
 
-.hero__recetas{
+.hero_re{
     width: 100%;
-    height: 100vh;
-    min-width: 600px;
-    max-height: 800px;
+    height: 10vh;
     position: relative;
-    display: grid;
-    grid-template-rows: 100px 1fr;
-    color: black;
+    color: rgb(255, 255, 255); 
+    
 }
 
-.nav__container{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: var(--padding-container);
-    color: black;
-}
-
-.nav__div{
-    --pading-container:0;
+.hero_re::before{
+    content: "";
+    position: absolute;
+    width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    background-color: black;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('Imagenes/portada.jpg');
+    background-size: cover;
+    z-index: -1;
 }
