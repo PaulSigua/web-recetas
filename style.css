@@ -1,19 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-body{
+body {
     font-family: 'Ubuntu', sans-serif;
     background-color: rgba(255, 193, 164, 0.767);
 }
 
-.container{
+.container {
     width: 95%;
-    
     margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-container);
 }
 
-.hero{
+.hero {
     width: 100%;
     height: 70vh;
     min-width: 600px;
@@ -26,7 +25,7 @@ body{
     margin-bottom: 30px;
 }
 
-.hero::before{
+.hero::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -36,14 +35,14 @@ body{
     z-index: -1;
 }
 
-.nav{
+.nav {
     height: 100%;
     display: flex;
     align-items: center;
     /*background-color: white;*/
 }
 
-.nav__link{
+.nav__link {
     margin-left: auto;
     padding: 10px;
     display: flex;
@@ -51,33 +50,35 @@ body{
     text-decoration: none;
 }
 
-.nav-link-footer{
-    display: flex;   
+.nav-link-footer {
+    display: flex;
 }
 
-.nav__items{
+.nav__items {
     list-style: none;
 }
 
-.hero_title{
+.hero_title {
     font-size: 1.5rem;
     text-align: center;
     flex-wrap: wrap;
 }
 
-.hero__paragraph{
+.hero__paragraph {
     max-width: 400px;
     margin: 0 auto;
     text-align: center;
     text-align: justify;
     flex-wrap: wrap;
 }
+
 .slider-frame {
     overflow: hidden;
     position: relative;
     width: 960px;
     margin: 0 auto;
 }
+
 .grid-item img {
     display: block;
     width: 100%;
@@ -90,7 +91,7 @@ body{
     padding: 1em;
     line-height: 1.4;
     color: white;
-    text-shadow: 0 0 5px rgba(0,0,0,.7);
+    text-shadow: 0 0 5px rgba(0, 0, 0, .7);
     max-width: 960px;
     margin: 0 auto;
 
@@ -104,10 +105,10 @@ body{
 }
 
 .grid-item {
-    box-shadow: 0 2px 6px rgba(0,0,0,.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
     border-radius: 8px;
     background-color: #361f1f;
-    
+
     cursor: pointer;
     backface-visibility: hidden;
     position: relative;
@@ -115,36 +116,39 @@ body{
     padding: 7px;
     margin: 50px;
 }
+
 .list-container {
     display: flex;
     align-items: center;
     background-color: rgb(255, 255, 255);
 }
+
 .list-container .form-container {
-   width: 100%;
-   
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   align-items: center;
-   background-image: url('../images/bg_pattern.png');
-   background-size: cover;
-   color: rgb(0, 0, 0);
-   
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('../images/bg_pattern.png');
+    background-size: cover;
+    color: rgb(0, 0, 0);
+
 
 }
 
-.list-container{
+.list-container {
     width: 90%;
     box-shadow: 12px 12PX 12PX 12px rgba(0, 0, 0, 0.3);
     margin: auto;
-    
+
     max-width: 700px;
     display: grid;
     place-items: center;
     padding: 20px;
 
 }
+
 .list-container .titulos {
     margin-bottom: 0px;
     font-weight: bold;
@@ -154,14 +158,15 @@ body{
     line-height: 1.7em;
     font-size: 2em;
     color: rgb(0, 0, 0);
-    
+
 
 }
+
 .list-container .subtitulos {
     margin-top: 10px;
     margin-bottom: 0;
     font-size: 1.2em;
-    
+
 }
 
 .list-container .centrado {
@@ -177,7 +182,7 @@ body{
     margin-top: 14px;
 }
 
-.btn{
+.btn {
     cursor: pointer;
     background-color: #361f1f;
     border: 1px solid transparent;
@@ -187,16 +192,16 @@ body{
     font-size: 1rem;
 }
 
-.footer{
+.footer {
     background-color: rgb(6, 9, 58);
 }
 
-.footer-title{
+.footer-title {
     color: white;
     padding: 24px;
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -204,22 +209,21 @@ body{
     padding-bottom: 20px;
 }
 
-.footer-container-sec{
+.footer-container-sec {
     text-align: center;
     color: white;
     padding-bottom: 10px;
 }
 
-.container-center{
+.container-center {
     margin-bottom: 30px;
-    max-width: 600px;
     margin: 0 auto;
     text-align: center;
     text-align: justify;
     flex-wrap: wrap;
 }
 
-.recetas-x li{
+.recetas-x li {
     margin-bottom: 50px;
     padding: 0;
     display: grid;
@@ -231,28 +235,35 @@ body{
     color: black;
 }
 
+.button{
+
+}
+
 /*////////////////////////*/
 /* Segunda parte: Recetas*/
 /*///////////////////////*/
 
 .social-icons {
-    font-size: 24px; /* Tamaño de los íconos */
+    font-size: 24px;
+    /* Tamaño de los íconos */
 }
 
 .social-icons i {
-    margin-right: 10px; /* Espacio entre los íconos */
-    color: #2e0606; /* Color de los íconos */
+    margin-right: 10px;
+    /* Espacio entre los íconos */
+    color: #2e0606;
+    /* Color de los íconos */
 }
 
-.hero_re{
+.hero_re {
     width: 100%;
     height: 10vh;
     position: relative;
-    color: rgb(255, 255, 255); 
-    
+    color: rgb(255, 255, 255);
+
 }
 
-.hero_re::before{
+.hero_re::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -262,33 +273,38 @@ body{
     z-index: -1;
 }
 
-.first-image{
+.first-image {
     display: flex;
     padding: 25px;
     width: 300px;
-    height: 450px; /* Alto de la imagen */
+    height: 450px;
+    /* Alto de la imagen */
     object-fit: cover;
 }
 
-.ingredientes{
+.ingredientes {
     padding-left: 30px;
 }
 
 .columns {
     display: flex;
-    flex-direction: row; /* Alinea las columnas en una fila horizontal */
-    margin-left: 10px; /* Espacio entre la imagen y las columnas */
+    flex-direction: row;
+    /* Alinea las columnas en una fila horizontal */
+    margin-left: 10px;
+    /* Espacio entre la imagen y las columnas */
     width: 850px;
 }
 
 .column {
-    background-color: #f5f5f5; /* Fondo de las columnas */
+    background-color: #f5f5f5;
+    /* Fondo de las columnas */
     padding: 10px;
     margin: 10px;
-    width: 450px; /* Ancho de cada columna */
+    width: 450px;
+    /* Ancho de cada columna */
 }
 
-.procedimiento{
+.procedimiento {
     font-size: 14.5px;
 }
 
@@ -297,10 +313,22 @@ body{
 /*///////////////////////////*/
 
 .social-icons {
-    font-size: 24px; /* Tamaño de los íconos */
+    font-size: 24px;
+    /* Tamaño de los íconos */
 }
 
 .social-icons i {
-    margin-right: 10px; /* Espacio entre los íconos */
-    color: #2e0606; /* Color de los íconos */
+    margin-right: 10px;
+    /* Espacio entre los íconos */
+    color: #2e0606;
+    /* Color de los íconos */
+}
+
+.about-us{
+    color: black;
+    background-color: #f5f5f5;
+    /* Fondo de las columnas */
+    padding: 10px;
+    margin: 10px;
+    width: 450px;   
 }
