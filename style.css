@@ -16,12 +16,13 @@ body{
     width: 100%;
     height: 100vh;
     min-width: 600px;
-    max-height: 800px;
+    max-height: 400px;
     position: relative;
     display: grid;
     grid-template-rows: 100px 1fr;
     color: white;
     /*background-color: lightyellow;*/
+    margin-bottom: 30px;
 }
 
 .hero::before{
@@ -33,7 +34,7 @@ body{
     height: 100%;
     background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('Imagenes/portada.jpg');
     background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 48%, 0 48%);
+    clip-path: polygon(20 0, 100% 0, 100% 48%, 0 48%);
     z-index: -1;
 }
 
@@ -81,6 +82,7 @@ body{
 .hero_title{
     font-size: 1.5rem;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .hero__paragraph{
@@ -88,7 +90,7 @@ body{
     margin: 0 auto;
     text-align: center;
     text-align: justify;
-    margin-bottom: 150px;
+    flex-wrap: wrap;
 }
 
 .part_inirecets{
@@ -111,11 +113,69 @@ body{
 }
 
 
+.footer{
+    background-color: rgb(6, 9, 58);
+}
+
+.footer-title{
+    font-weight: 300;
+    font-size: 2ml;
+    color: white;
+    text-align: center;
+    color: white;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid white;
+    padding-bottom: 20px;
+}
+
+.nav-link-footer{
+    display: flex;
+    margin: 0;
+    margin-right: 20px;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.footer-container-sec{
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.container-center{
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    text-align: justify;
+    flex-wrap: wrap;
+}
+
+.recetas-x{
+    text-decoration: none;
+}
+
 /*////////////////////////*/
 /* Segunda parte: Recetas*/
 /*///////////////////////*/
 
-.hero__recetas{
+.nav-recet-container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+    background-color: black;
+}
+
+.recet{
     width: 100%;
     height: 100vh;
     min-width: 600px;
@@ -123,22 +183,26 @@ body{
     position: relative;
     display: grid;
     grid-template-rows: 100px 1fr;
-    color: black;
+    color: white;
 }
 
-.nav__container{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: var(--padding-container);
+.nav-links-receta{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
     color: black;
+    text-decoration: none;
 }
 
-.nav__div{
-    --pading-container:0;
-    height: 100%;
+.images-cont{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    background-color: black;
+    border-bottom: 1px solid white;
+    padding-bottom: 60px;
+    color: black;
+    margin-bottom: 90px;
 }
