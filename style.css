@@ -158,8 +158,16 @@ body{
     flex-wrap: wrap;
 }
 
-.recetas-x{
+.recetas-x li{
+    margin-bottom: 50px;
+    padding: 0;
+    display: grid;
+    grid-column-end: auto;
+    text-align: center;
+    gap: 2em;
     text-decoration: none;
+    color: white;
+    color: black;
 }
 
 /*////////////////////////*/
