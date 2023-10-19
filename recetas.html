@@ -7,6 +7,7 @@
     <title>Recetas del Veci</title>
     <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -14,8 +15,14 @@
         <div>
         <nav class="nav container">
             <div class="nav__logo">
-                <h2 class="nav title">Recetas</h2>
+                <h1 class="nav title">Recetas</h1>
             </div>
+            <section class="buscarreceta">
+                <div class="centered-elements">
+                    <input type="text" id="recipe-search" class="search-input" placeholder="Buscar recetas por nombre">
+                    <button class="boton" onclick="searchRecipes()">Buscar</button>
+                </div>
+            </section>            
             <ul class="nav__link">
                 <a href="inicio.html" class="nav__link">Inicio</a>
                 <a href="recetas.html" class="nav__link">Recetas</a>
@@ -24,6 +31,7 @@
         </nav>
     </header>
 <section>
+    <div class="recetas">
     <h2>Chaulafan</h2>
     <div class="first-image" id="1">
         <img src="Imagenes/slide1.jpg" alt="">
@@ -81,7 +89,8 @@
             </div>
         </div>
     </div>
-
+    </div>
+    <div class="recetas">
     <h2>Bolon de verde</h2>
     <div class="first-image" id="2">
         <img src="Imagenes/slide2.jpg" alt="">
@@ -141,7 +150,8 @@
             </div>
         </div>
     </div>
-
+</div>
+<div class="recetas">
     <h2>Seco de Pollo</h2>
     <div class="first-image" id="3">
         <img src="Imagenes/slide3.jpg" alt="">
@@ -212,7 +222,8 @@
             </div>
         </div>
     </div>
-
+</div>
+<div class="recetas">
     <h2>Milanesa</h2>
     <div class="first-image" id="4">
         <img src="Imagenes/slide4.jpg" alt="">
@@ -271,7 +282,8 @@
             </div>
         </div>
     </div>
-
+</div>
+<div class="recetas">
     <h2>Hornado de Chancho</h2>
     <div class="first-image" id="5">
         <img src="Imagenes/slide5.jpg" alt="">
@@ -339,7 +351,8 @@
             </div>
         </div>
     </div>
-
+</div>
+<div class="recetas">
     <h2>Sopa de verduras</h2>
     <div class="first-image" id="6">
         <img src="Imagenes/slide6.jpg" alt="">
@@ -411,70 +424,8 @@
             </div>
         </div>
     </div>
-
-    <h2>Espaguetti</h2>
-    <div class="first-image" id="7">
-        <img src="Imagenes/slide7.jpg" alt="">
-        <div class="columns">
-            <div class="column">
-                <ul class="ingredientes">
-                    <h3>Ingredientes</h3>
-                    <li>2 cucharadas de aceite de oliva</li>
-                    <li>200 gramos de spaghetti</li>
-                    <li>2 cucharadas de aceite de oliva</li>
-                    <li>1 cebolla, picada</li>
-                    <li>2 dientes de ajo, picados</li>
-                    <li>1 lata de tomates triturados (aproximadamente 400 gramos)</li>
-                    <li>1 cucharadita de azúcar (opcional)</li>
-                    <li>1 cucharadita de orégano seco</li>
-                    <li>Sal y pimienta al gusto</li>
-                    <li>Hojas de albahaca fresca o perejil para decorar</li>
-                    <li>Queso parmesano rallado (opcional, para servir)</li>
-                </ul>
-            </div>
-            <div class="column">
-                <h3>Procedimiento:</h3>
-                <p class="procedimiento">
-                    Cocina los spaghetti siguiendo las instrucciones del paquete en una olla grande con
-                    agua
-                    hirviendo y sal. Cocina
-                    hasta que estén al dente, lo que generalmente toma alrededor de 8-10 minutos. Luego,
-                    escurre
-                    la pasta.
-
-                    Mientras se cocinan los spaghetti, en una sartén grande, calienta el aceite de oliva
-                    a fuego
-                    medio. Agrega la
-                    cebolla y el ajo, y saltea hasta que estén dorados y fragantes.
-
-                    Agrega los tomates triturados a la sartén. Si los tomates son ácidos, puedes agregar
-                    una
-                    cucharadita de azúcar
-                    para equilibrar el sabor. Luego, agrega el orégano, la sal y la pimienta al gusto.
-                    Cocina la
-                    salsa a fuego lento
-                    durante unos 15-20 minutos para que espese y los sabores se mezclen.
-
-                    Una vez que la salsa esté lista, sírvela sobre los spaghetti cocidos.
-
-                    Decora los spaghetti con hojas de albahaca fresca o perejil picado. Si lo deseas,
-                    puedes
-                    añadir queso parmesano
-                    rallado por encima antes de servir.
-
-                    Esta es una receta clásica de spaghetti con salsa de tomate, pero puedes
-                    personalizarla
-                    agregando tus
-                    ingredientes favoritos, como albahaca fresca, aceitunas, champiñones, o carne
-                    molida.
-                    ¡Espero que disfrutes de
-                    este delicioso platillo!
-                </p>
-            </div>
-        </div>
-    </div>
-
-
+</div>
+<div class="recetas">
     <h2>Encebollado</h2>
     <div class="first-image" id="8">
         <img src="Imagenes/slide8.jpg" alt="">
@@ -546,8 +497,8 @@
             </div>
         </div>
     </div>
-
-
+</div>
+<div class="recetas">
     <h2>Cuy asado</h2>
     <div class="first-image" id="9">
         <img src="Imagenes/slide9.jpg" alt="">
@@ -607,8 +558,8 @@
             </div>
         </div>
     </div>
-
-
+</div>
+<div class="recetas">
     <h2>Papas con cuero</h2>
     <div class="first-image" id="10">
         <img src="Imagenes/slide10.jpg" alt="">
@@ -671,31 +622,55 @@
             </div>
         </div>
     </div>
+</div>
+<div id="recipeList">
 
+</div>
     </section>
-
-    <footer class="footer">
-        <section class="footer-container">
-            <nav>
-                <h3 class="footer-title"><b>También puedes visitar</b></h3>
-                <ul class="nav-link-footer">
-                    <li>
-                        <a href="sobreNosotros.html" class="nav__link">Sobre Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="inicio.html" class="nav__link">Ir al inicio</a>
-                    </li>
-                </ul>
-            </nav>
-
-        </section>
-        <section class="footer-container-sec">
-            <h3>Realizado por</h2>
-                <h4>Jeison Pañora</h4>
-                <h4>Paúl Sigua</h4>
-        </section>
+    <footer class="footer-names">
+        <div class="info-personal">
+          <h1>Realizado por:</h1>
+          <div class="integrantes-name">
+            <div class="name-div">
+                <a href="mailto:jpanora@est.ups.edu.ec">jpanora@est.ups.edu.ec</a>
+                <p>Pañora Jeison</p>
+            </div>
+            <div class="name-div">
+                <a href="mailto:psigua@est.ups.edu.ec">psigua@est.ups.edu.ec</a>
+              <p>Sigual Paul</p>
+            </div>
+          </div>
+            <div class="banderas">
+                <div class="ban">
+                <img src="Imagenes/ban-ar.png" alt="Bandera de Argentina">
+                <img src="Imagenes/ban-ec.png" alt="Bandera de Ecuador">
+                <img src="Imagenes/ban-pr.png" alt="Bandera de Puerto Rico">
+            </div>
+            <p>2023</p>
+            </div>
     </footer>
 
+    
+    <script>
+        const recipeList = document.getElementById("recipeList");
+      
+        // Iterar a través de las claves en localStorage
+        for (let i = 0; i < localStorage.length; i++) {
+          const key = localStorage.key(i);
+          if (key.startsWith("recipe_")) {
+            // Recuperar y parsear la receta
+            const recipe = JSON.parse(localStorage.getItem(key));
+      
+            // Mostrar la receta en la página
+            recipeList.innerHTML += `
+              <h2>${recipe.name}</h2>
+              <h3>Ingredientes:</h3>
+              <p>${recipe.ingredients}</p>
+              <h3>Procedimiento:</h3>
+              <p>${recipe.procedure}</p>
+            `;
+          }
+        }
+      </script>
 </body>
-
 </html>

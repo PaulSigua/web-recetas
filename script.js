@@ -1,59 +1,35 @@
-$(document).ready(function () {
-    // Capturar el formulario
-    $("section#inicio form").submit(function (e) {
-        e.preventDefault();
+function searchRecipes() {
+    var searchTerm = document.getElementById('recipe-search').value.toLowerCase(); // Obtén el término de búsqueda y conviértelo a minúsculas para una búsqueda sin distinción entre mayúsculas y minúsculas
+    var recipes = document.querySelectorAll('.recetas'); // Selecciona todos los elementos con la clase 'recipe'
+    recipes.forEach(function (recipe) {
+        var recipeTitle = recipe.querySelector('h2').textContent.toLowerCase(); // Obtén el título de la receta y conviértelo a minúsculas
+        var recipeDescription = recipe.querySelector('p').textContent.toLowerCase(); // Obtén la descripción de la receta y conviértelo a minúsculas
 
-        const nombre = $("#nombre").val();
-        const ingredientes = $("#ingredientes").val();
-        const pasos = $("#pasos").val();
-
-        if (nombre && ingredientes && pasos) {
-            const receta = {
-                nombre,
-                ingredientes,
-                pasos,
-            };
-
-            let recetas = JSON.parse(localStorage.getItem('recetas')) || [];
-            recetas.push(receta);
-            localStorage.setItem('recetas', JSON.stringify(recetas));
-
-            // Limpia el formulario
-            $("section#inicio form")[0].reset();
-
-            // Actualiza la lista de recetas
-            mostrarRecetas();
+        if (recipeTitle.includes(searchTerm) || recipeDescription.includes(searchTerm)) {
+            recipe.style.display = 'block'; // Muestra la receta si coincide con el término de búsqueda
+        } else {
+            recipe.style.display = 'none'; // Oculta la receta si no coincide
         }
     });
+}
 
-    // Función para mostrar recetas
-    function mostrarRecetas() {
-        const recetas = JSON.parse(localStorage.getItem('recetas')) || [];
-        const recetasLista = $("#recetas-lista");
-        recetasLista.empty();
-
-        recetas.forEach((receta, index) => {
-            recetasLista.append(
-                `<div class="receta">
-                    <h3>${receta.nombre}</h3>
-                    <p><strong>Ingredientes:</strong> ${receta.ingredientes}</p>
-                    <p><strong>Pasos:</strong> ${receta.pasos}</p>
-                </div>`
-            );
-        });
+function validarYGuardar() {
+    const recipeName = document.getElementById("nombre").value;
+    const ingredients = document.getElementById("ingredientes").value;
+    const procedure = document.getElementById("pasos").value;
+  
+    if (recipeName.trim() === "" || ingredients.trim() === "" || procedure.trim() === "") {
+      alert("Por favor, complete todos los campos antes de enviar el formulario.");
+    } else {
+      const recipe = {
+        name: recipeName,
+        ingredients: ingredients,
+        procedure: procedure,
+      };
+      const recipeKey = `recipe_${Date.now()}`;
+      localStorage.setItem(recipeKey, JSON.stringify(recipe));
+  
+      // Redirigir a la página de recetas
+      window.location.href = "recetas.html";
     }
-
-    // Filtrar recetas por nombre
-    $("#search").on("input", function () {
-        const searchTerm = $(this).val().toLowerCase();
-        const recetas = JSON.parse(localStorage.getItem('recetas')) || [];
-        const recetasFiltradas = recetas.filter((receta) => {
-            return receta.nombre.toLowerCase().includes(searchTerm);
-        });
-
-        mostrarRecetas(recetasFiltradas);
-    });
-
-    // Mostrar recetas al cargar la página
-    mostrarRecetas();
-});
+  }

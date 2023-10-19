@@ -13,6 +13,7 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header class="hero">
@@ -42,55 +43,55 @@
                 <li class="grid-item">
                     <img src="Imagenes/slide1.jpg" alt="">
                     <div>
-                        <p>Nombre del plato</p>
+                        <p>Chaulafan</p>
                     </div>
                 </li>
                 <li class="grid-item">
                     <img src="Imagenes/slide2.jpg" alt="">
                     <div>
-                        <p>Nombre del plato</p>
+                        <p>Bolon de verde</p>
                     </div>
                 </li>
                 <li class="grid-item">
                     <img src="Imagenes/slide3.jpg" alt="">
                     <div>
-                        <p>Nombre del plato</p>
+                        <p>Seco de pollo</p>
                     </div>
                 </li>
                 <li class="grid-item">
                     <img src="Imagenes/slide4.jpg" alt="">
                     <div>
-                        <p>Nombre del plato</p>
+                        <p>Milanesa</p>
                     </div>
                 </li>
                 <li class="grid-item">
                     <img src="Imagenes/slide5.jpg" alt="">
                     <div>
-                        <p>Nombre del plato</p>
+                        <p>Hornado de Chancho</p>
                     </div>
                 </li>
                 <li class="grid-item">
                     <img src="Imagenes/slide6.jpg" alt="">
                     <div>
-                        <p>Nombre del plato</p>
+                        <p>Sopa de verduras</p>
                     </div>
                 </li>
                 <li class="grid-item">
                     <img src="Imagenes/slide8.jpg" alt="">
                     <div>
-                        <p>Nombre del plato</p>
+                        <p>Encebollado</p>
                     </div>
                 </li>
                 <li class="grid-item">
                     <img src="Imagenes/slide9.jpg" alt="">
                     <div>
-                        <p>Nombre del plato</p>
+                        <p>Cuy asado</p>
                     </div>
                 </li>
                 <li class="grid-item">
                     <img src="Imagenes/slide10.jpg" alt="">
                     <div>
-                        <p>Nombre del plato</p>
+                        <p>Papas con cuero</p>
                     </div>
                 </li>
             </ul>
@@ -101,7 +102,7 @@
         <div class="form-container">
           <h1 class="titulos">Envianos tu receta</h1>
           <h5 class="subtitulos">Comparte tu receta con nosotros</h5>
-          <form id="survey-form" class="centrado">
+          <form id="recipeForm" class="centrado">
     
             <label for="nombre" class="label">Nombre de su receta</label>
             <textarea class="form-control" id="nombre" ></textarea>
@@ -112,19 +113,36 @@
             <label for="opinion" class="label">Ingrese los pasos</label>
             <textarea class="form-control" id="pasos" rows="10"></textarea>
             <br>
-            <button type="submit" class="btn">Enviar</button>
+            <button type="submit" class="btn" onclick="validarYGuardar()">Enviar</button>
 
           </form>
         </div>
      </section>
 
-    <footer class="footer">
-        <section class="footer-container">
-            <h3>Realizado por</h2>
-                <h4>Jeison Pañora</h4>
-                <h4>Paúl Sigua</h4>
-        </section>
+    <footer class="footer-names">
+        <div class="info-personal">
+          <h1>Realizado por:</h1>
+          <div class="integrantes-name">
+            <div class="name-div">
+                <a href="mailto:jpanora@est.ups.edu.ec">jpanora@est.ups.edu.ec</a>
+                <p>Pañora Jeison</p>
+            </div>
+            <div class="name-div">
+                <a href="mailto:psigua@est.ups.edu.ec">psigua@est.ups.edu.ec</a>
+              <p>Sigual Paul</p>
+            </div>
+          </div>
+            <div class="banderas">
+                <div class="ban">
+                <img src="Imagenes/ban-ar.png" alt="Bandera de Argentina">
+                <img src="Imagenes/ban-ec.png" alt="Bandera de Ecuador">
+                <img src="Imagenes/ban-pr.png" alt="Bandera de Puerto Rico">
+            </div>
+            <p>2023</p>
+            </div>
     </footer>
+
+
 
 </body>
 </html>
