@@ -74,9 +74,10 @@ body {
 }
 
 .slider-frame {
+    display: grid;
     overflow: hidden;
     position: relative;
-    width: 960px;
+    width: auto;
     margin: 0 auto;
 }
 
@@ -188,7 +189,7 @@ body {
     background-color: #361f1f;
     border: 1px solid transparent;
     color: white;
-    line-height: 40px;
+    line-height: 30px;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
 }
@@ -234,10 +235,6 @@ body {
     text-decoration: none;
     color: white;
     color: black;
-}
-
-.button{
-
 }
 
 /*////////////////////////*/
@@ -387,4 +384,35 @@ body {
     width: 450px;   
     justify-content: center;
     margin: 0 auto;
+}
+
+/*Ultima parte*/
+.imagen-inferior {
+    position: fixed;
+    width: 100%;
+    height: 100px; /* Ajusta la altura según tus necesidades */
+    background-image: url('Imagenes/inferior.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.imagen-superior {
+    position: fixed;
+    width: 100%;
+    height: 100px; /* Ajusta la altura según tus necesidades */
+    background-image: url('Imagenes/superior.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.imagen-superior {
+    top: 0;
+}
+
+.imagen-inferior {
+    bottom: 0;
+}
+
+.contenido {
+    padding: 20px;
 }
