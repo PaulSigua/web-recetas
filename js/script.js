@@ -13,6 +13,7 @@ function searchRecipes() {
     });
 }
 
+
 function validarYGuardar() {
     const recipeName = document.getElementById("nombre").value;
     const ingredients = document.getElementById("ingredientes").value;

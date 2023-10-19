@@ -105,7 +105,6 @@ body {
     box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
     border-radius: 8px;
     background-color: #361f1f;
-
     cursor: pointer;
     backface-visibility: hidden;
     position: relative;
@@ -122,15 +121,12 @@ body {
 
 .list-container .form-container {
     width: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-size: cover;
     color: rgb(0, 0, 0);
-
-
 }
 
 .list-container {
@@ -142,7 +138,6 @@ body {
     display: grid;
     place-items: center;
     padding: 20px;
-
 }
 
 .list-container .titulos {
@@ -154,8 +149,6 @@ body {
     line-height: 1.7em;
     font-size: 2em;
     color: rgb(0, 0, 0);
-
-
 }
 
 .list-container .subtitulos {
