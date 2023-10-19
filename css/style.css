@@ -72,8 +72,9 @@ body {
 .slider-frame {
     overflow: hidden;
     position: relative;
-    width: 1000px;
+    width: auto;
     margin: 0 auto;
+    display: flex;
 }
 
 .grid-item img {
@@ -323,64 +324,6 @@ textarea.form-control {
 /*///////////////////////////*/
 /*Sobre Nosotross*/
 /*///////////////////////////*/
-
-.social-icons {
-    font-size: 24px;
-    /* Tamaño de los íconos */
-}
-
-:root {
-    --facebook: #3b5999;
-    --instagram: #e4405f;
-    --twitter: #0077b5;
-}
-
-.social-icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.social-icons ul li{
-    display: inline-block;
-    margin: 0 5px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-}
-
-.social-icons ul li a{
-    display: block;
-    padding: 0 10px;
-    background: #fff;
-    color: #f5f5f5;
-    line-height: 50px;
-    font-size: 18px;
-    box-shadow: 0 3px 5px 0px rgba(255, 253, 253, 0.542);
-    transform: .2s;
-}
-
-.social-icons ul:hover a{
-    filter: blur(0.5px);
-}
-
-.social-icons ul li a:hove{
-    transform: translate(3px) scale(1.05);
-    box-shadow: 0 5px 5px 0px rgba(244, 243, 243, 0.497);
-    filter: none;
-}
-
-.social-icons ul li .facebook:hover{
-    background: var(--facebook);
-}
-
-.social-icons ul li .instagram:hover{
-    background: var(--instagram);
-}
-
-.social-icons ul li .twitter:hover{
-    background: var(--twitter);
-}
 
 .about-us{
     color: rgb(0, 0, 0);
